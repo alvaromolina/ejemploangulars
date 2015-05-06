@@ -8,8 +8,12 @@ app.config(['$routeProvider', function($routeProvider){
 	});
 }]);
 
-
 app.controller('beerlistController', function($scope){
   $scope.beers = [{name: 'taquina', avb: 6},{name: 'pacena', avb: 5},{name: 'huari', avb: 8}];
 });
+
+app.controller('beerController', function($scope){
+  $scope.beer = {name: 'taquina', avb: 6}
+});
+
 
