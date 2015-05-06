@@ -6,6 +6,11 @@ app.config(['$routeProvider', function($routeProvider){
 		templateUrl: 'views/beers.html',
 		controller: 'beerlistController'
 	});
+
+	$routeProvider.when('/beer', {
+		templateUrl: 'views/beer.html',
+		controller: 'beerController'
+	});
 }]);
 
 app.controller('beerlistController', function($scope){

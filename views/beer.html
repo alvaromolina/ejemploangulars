@@ -1,16 +1,6 @@
 <div>
 <label>Cerveza:</label>
-<input type="text" ng-model="beer" placeholder="Enter a name here">
 <hr>
-<h1>{{beer}}!</h1>
-<table> 
-        <tr> 
-            <td> Nombre</td>
-            <td>  Nivel alcholico  </td>   
-        </tr>
-        <tr ng-repeat="beer in beers | filter:beer">
-            <td>{{beer.name}}</td>
-            <td>{{beer.avb}}</td>
-        </tr>
-</table>
+<h1>{{beer.name}}</h1>
+
 </div>
